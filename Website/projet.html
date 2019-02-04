@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projet</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light px-5">
+        <a class="navbar-brand " href="index.html"><img id="navbar-logo" src="img/logo-stuliday_1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav text-uppercase">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="article.html">Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="créer_un_projet.html">Creer un projet</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        profil
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="profil.html">Mon compte</a>
+                        <a class="dropdown-item" href="#">Se deconnecter</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        A propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="a-propos.html">Qui sommes-nous ?</a> 
+                        <a class="dropdown-item" href="a-propos.html#contact">Contactez nous !</a><!-- permet de faire une ancre sur la page visée-->
+                        <a class="dropdown-item" href="mentions_legales.html">Mentions légales</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>    
+<section class="section-1">
+    <!-- container -->
+    <div class="container">
+        <div class="row">    
+            <!-- Article main content -->
+            <article class="card col-md-8">
+                <br>
+                <h1>1 semaine à Courchevel</h1> <hr>
+                <h5 class="text-muted">Postée par : <a href="profil-visiteur.html">Jean-michel</a></h5>
+                <p class="font-italic text-muted">Date > du : 16/02/2019 au : 23/02/2019</p>
+                <img class="article-img" src="../Website/img/slider/slider5.jpg" alt="">
+                <hr>
+                <h3>Description de l'article: </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, itaque, cumque, maxime obcaecati reprehenderit ea dignissimos amet voluptatem id excepturi facilis totam veritatis maiores eveniet neque explicabo temporibus quisquam in ex ab fugiat ipsa tempore sunt corporis nostrum quam illum!</p>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h5 class="text-muted">Nombre de place restantes : 4</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn-lg btn-success text-uppercase text-white">participez !</a>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="text-muted">Prix : 80€/pers.</h5>  
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <h4>Contactez l'annonceur :</h4>
+                    <form action="action_page.php">
+                        
+                        <label for="fname">Prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                        <label for="lname">Nom</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        <label for="subject">Message</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:220px"></textarea>
+                        
+                        <input type="submit" value="Envoyer">
+                        
+                    </form>
+                </div>
+            </article>
+            <!-- /Article -->
+            <!-- Sidebar -->
+            <aside class="col-md-4 sidebar sidebar-right">
+                <h4 class="text-uppercase">Annonces qui pourraient vous interesser...</h4>
+                <hr>
+                <div class="card" style="width: 18rem;">
+                    <img src="../Website/img/article/article-3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mongolie</h5>
+                        <p class="card-text">Je recherche un ou plusieurs co-voyageur pour partager mon voyage en mongol...</p> <hr>
+                        <h6 class="text-muted">Postée par : <a href="#">Romain</a></h6>
+                        <p class="text-muted">Date > à partir d'avril 2019</p>
+                        <a href="projet.html" class="btn btn-primary">Voir Annonce</a>
+                    </div>
+                </div>
+                <br>
+                <div class="card" style="width: 18rem;">
+                    <img src="../Website/img/article/article-1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mongolie</h5>
+                        <p class="card-text">Je recherche un ou plusieurs co-voyageur pour partager mon voyage en mongo...</p> <hr>
+                        <h6 class="text-muted">Postée par : <a href="#">Romain</a></h6>
+                        <p class="text-muted">Date > à partir d'avril 2019</p>
+                        <a href="projet.html" class="btn btn-primary">Voir Annonce</a>
+                    </div>
+                </div>
+            </aside>
+             <!-- /Sidebar -->   
+        </div>
+    </div>	<!-- /container -->
+</section>
+	
+    
+    <!-- Footer -->
+    <footer>
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <img src="img/logo-stuliday_1.png" alt="">
+                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <h5>Liens rapides</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Acceuil</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Articles</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>A propos</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Mon compte</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>	
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center">
+                <p><u><a href="file:///D:/Romain/Cours/Projet%20Stuliday/Website/index.html#">Stuliday Corporation</a></u> is Registered at Bordeaux, 58 rue de Marseille, 33000, FRANCE.</p>
+                <p class="h6">&copy All right Reversed.</p>
+            </div>
+            </hr>
+        </div>	
+    </div>  
+<!-- ./Footer -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script>
+      
+ </script>
+ <script src="js/main.js"></script>
+</body>
+
+
+</html>
